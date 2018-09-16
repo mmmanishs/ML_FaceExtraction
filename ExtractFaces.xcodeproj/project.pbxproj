@@ -12,6 +12,8 @@
 		06964562214D7F3800AE3B9E /* String+FileManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06964561214D7F3800AE3B9E /* String+FileManagement.swift */; };
 		06964564214D9FBC00AE3B9E /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06964563214D9FBC00AE3B9E /* String+Subscript.swift */; };
 		06C4933A214E0330000B7FB0 /* AppStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C49339214E0330000B7FB0 /* AppStart.swift */; };
+		06C4933C214E0420000B7FB0 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C4933B214E0420000B7FB0 /* Shell.swift */; };
+		06C4933F214E06B5000B7FB0 /* split.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 06C4933D214E0455000B7FB0 /* split.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +26,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		06C4933E214E05C6000B7FB0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				06C4933F214E06B5000B7FB0 /* split.sh in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +45,8 @@
 		06964561214D7F3800AE3B9E /* String+FileManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FileManagement.swift"; sourceTree = "<group>"; };
 		06964563214D9FBC00AE3B9E /* String+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
 		06C49339214E0330000B7FB0 /* AppStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStart.swift; sourceTree = "<group>"; };
+		06C4933B214E0420000B7FB0 /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
+		06C4933D214E0455000B7FB0 /* split.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = split.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,8 @@
 				063E6A3A214B4CE70015C31D /* NSImage+FaceExtraction.swift */,
 				06964561214D7F3800AE3B9E /* String+FileManagement.swift */,
 				06964563214D9FBC00AE3B9E /* String+Subscript.swift */,
+				06C4933B214E0420000B7FB0 /* Shell.swift */,
+				06C4933D214E0455000B7FB0 /* split.sh */,
 			);
 			path = ExtractFaces;
 			sourceTree = "<group>";
@@ -84,6 +100,7 @@
 				063E6A2C214B4BF70015C31D /* Sources */,
 				063E6A2D214B4BF70015C31D /* Frameworks */,
 				063E6A2E214B4BF70015C31D /* CopyFiles */,
+				06C4933E214E05C6000B7FB0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -131,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C4933C214E0420000B7FB0 /* Shell.swift in Sources */,
 				06964564214D9FBC00AE3B9E /* String+Subscript.swift in Sources */,
 				06964562214D7F3800AE3B9E /* String+FileManagement.swift in Sources */,
 				063E6A3B214B4CE70015C31D /* NSImage+FaceExtraction.swift in Sources */,

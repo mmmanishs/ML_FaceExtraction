@@ -11,7 +11,7 @@ import AppKit
 
 func startEvents(inputDir: String, outputDir: String) {
     print(ProcessInfo().arguments)
-    guard let inputImagesDirectories = inputDirectory.getContents(fileType: .directory) else {
+    guard let inputImagesDirectories = inputDir.getContents(fileType: .directory) else {
         return
     }
     inputImagesDirectories.forEach { directory in
@@ -34,7 +34,7 @@ func startEvents(inputDir: String, outputDir: String) {
         
         // Now save extracted face images
         let dirName = directory.nameFromPath
-        let outputDir = outputDirectoryHomePath.append(filePath: dirName)
+        let outputDir = outputDir.append(filePath: dirName)
         outputDir.makeDirectory()
         var imageNameCounter = 1
         

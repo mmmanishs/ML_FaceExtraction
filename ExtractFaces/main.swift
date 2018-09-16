@@ -11,14 +11,15 @@ import Vision
 import AppKit
 
 // Input Directory: Folders with images are expected in this folder
-var inputDirectory = "/Users/manishsingh/Desktop/Extract/Input"
+let splitOutput = "/Users/manishsingh/Desktop/Extract/Input"
+let movie1 = "/Users/manishsingh/Desktop/Extract/Manish.MOV"
+let movie2 = "/Users/manishsingh/Desktop/Extract/Person2.MOV"
 
-// Output Directory: Cropped face images will be put here, in the folders from which they were extracted from (Folders in the Input directory)
-let outputDirectoryHomePath = "/Users/manishsingh/Desktop/Extract/Output"
+// Pass all the parameters in the command line and handle folder creation and deletion
 
 func main() {
     let processArguments = ProcessInfo().arguments
-    guard processArguments.count != 3 else {
+    guard processArguments.count == 3 else {
         print("Unexpected number of arguments")
         print("Valid example")
         print("programName inputDirectory outputDirectory")
@@ -27,6 +28,10 @@ func main() {
     let processPath = processArguments[0]
     let inputDir = processArguments[1]
     let outputDir = processArguments[2]
+    
+    let scriptPath = processPath._cd__() + "/split.sh"
+    let bashCommand = "sh \(scriptPath) \(splitOutput) \(movie1) \(movie2)"
+    shell(bashCommand)
     startEvents(inputDir: inputDir, outputDir: outputDir)
 }
 

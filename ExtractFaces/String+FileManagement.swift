@@ -31,6 +31,12 @@ extension String {
         }
     }
     
+    func _cd__() -> String {
+        var path = components(separatedBy: "/")
+        path.removeLast()
+        return path.joined(separator: "/")
+    }
+    
     func append(filePath: String) -> String {
         var path = self
         if self[count - 1] != "/" {
