@@ -5,6 +5,7 @@
 //  Created by Manish Singh on 9/15/18.
 //  Copyright © 2018 Manish Singh. All rights reserved.
 //
+// https://stackoverflow.com/questions/26971240/how-do-i-run-an-terminal-command-in-a-swift-script-e-g-xcodebuild
 
 import Foundation
 

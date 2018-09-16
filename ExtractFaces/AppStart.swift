@@ -9,7 +9,16 @@
 import Foundation
 import AppKit
 
-func startEvents(inputDir: String, outputDir: String) {
+func startImageSplit(scriptPath: String, outputFolder: String, inputMovies: [String]) {
+    var inputMovieParam = ""
+    inputMovies.forEach { movie in
+        inputMovieParam += movie + " "
+    }
+    let bashCommand = "sh \(scriptPath) \(outputFolder) \(inputMovieParam)"
+    shell(bashCommand)
+}
+
+func startExtractImageProcess(inputDir: String, outputDir: String) {
     print(ProcessInfo().arguments)
     guard let inputImagesDirectories = inputDir.getContents(fileType: .directory) else {
         return

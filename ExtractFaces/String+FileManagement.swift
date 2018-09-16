@@ -75,6 +75,11 @@ extension String {
         try? FileManager().createDirectory(at: url, withIntermediateDirectories: true, attributes: nil)
     }
     
+    func delete() {
+        let fileManager = FileManager.default
+        try? fileManager.removeItem(atPath: self)
+    }
+    
     func makeDirectory() {
         try? FileManager.default.createDirectory(atPath: self, withIntermediateDirectories: true, attributes: nil)
     }
