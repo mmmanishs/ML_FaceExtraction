@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		063E6A34214B4BF70015C31D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063E6A33214B4BF70015C31D /* main.swift */; };
-		063E6A3B214B4CE70015C31D /* FaceCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063E6A3A214B4CE70015C31D /* FaceCropper.swift */; };
-		063E6A3D214B50070015C31D /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063E6A3C214B50070015C31D /* FileHandler.swift */; };
-		06964560214CA1BE00AE3B9E /* NSImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0696455F214CA1BE00AE3B9E /* NSImageExtension.swift */; };
+		063E6A3B214B4CE70015C31D /* NSImage+FaceExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063E6A3A214B4CE70015C31D /* NSImage+FaceExtraction.swift */; };
+		06964562214D7F3800AE3B9E /* String+FileManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06964561214D7F3800AE3B9E /* String+FileManagement.swift */; };
+		06964564214D9FBC00AE3B9E /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06964563214D9FBC00AE3B9E /* String+Subscript.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +28,9 @@
 /* Begin PBXFileReference section */
 		063E6A30214B4BF70015C31D /* ExtractFaces */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExtractFaces; sourceTree = BUILT_PRODUCTS_DIR; };
 		063E6A33214B4BF70015C31D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		063E6A3A214B4CE70015C31D /* FaceCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCropper.swift; sourceTree = "<group>"; };
-		063E6A3C214B50070015C31D /* FileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
-		0696455F214CA1BE00AE3B9E /* NSImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageExtension.swift; sourceTree = "<group>"; };
+		063E6A3A214B4CE70015C31D /* NSImage+FaceExtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+FaceExtraction.swift"; sourceTree = "<group>"; };
+		06964561214D7F3800AE3B9E /* String+FileManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FileManagement.swift"; sourceTree = "<group>"; };
+		06964563214D9FBC00AE3B9E /* String+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				063E6A33214B4BF70015C31D /* main.swift */,
-				063E6A3A214B4CE70015C31D /* FaceCropper.swift */,
-				063E6A3C214B50070015C31D /* FileHandler.swift */,
-				0696455F214CA1BE00AE3B9E /* NSImageExtension.swift */,
+				063E6A3A214B4CE70015C31D /* NSImage+FaceExtraction.swift */,
+				06964561214D7F3800AE3B9E /* String+FileManagement.swift */,
+				06964563214D9FBC00AE3B9E /* String+Subscript.swift */,
 			);
 			path = ExtractFaces;
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				063E6A3D214B50070015C31D /* FileHandler.swift in Sources */,
-				063E6A3B214B4CE70015C31D /* FaceCropper.swift in Sources */,
-				06964560214CA1BE00AE3B9E /* NSImageExtension.swift in Sources */,
+				06964564214D9FBC00AE3B9E /* String+Subscript.swift in Sources */,
+				06964562214D7F3800AE3B9E /* String+FileManagement.swift in Sources */,
+				063E6A3B214B4CE70015C31D /* NSImage+FaceExtraction.swift in Sources */,
 				063E6A34214B4BF70015C31D /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
