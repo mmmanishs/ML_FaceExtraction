@@ -11,6 +11,7 @@
 		063E6A3B214B4CE70015C31D /* NSImage+FaceExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063E6A3A214B4CE70015C31D /* NSImage+FaceExtraction.swift */; };
 		06964562214D7F3800AE3B9E /* String+FileManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06964561214D7F3800AE3B9E /* String+FileManagement.swift */; };
 		06964564214D9FBC00AE3B9E /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06964563214D9FBC00AE3B9E /* String+Subscript.swift */; };
+		06C4933A214E0330000B7FB0 /* AppStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C49339214E0330000B7FB0 /* AppStart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		063E6A3A214B4CE70015C31D /* NSImage+FaceExtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+FaceExtraction.swift"; sourceTree = "<group>"; };
 		06964561214D7F3800AE3B9E /* String+FileManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FileManagement.swift"; sourceTree = "<group>"; };
 		06964563214D9FBC00AE3B9E /* String+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
+		06C49339214E0330000B7FB0 /* AppStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				063E6A33214B4BF70015C31D /* main.swift */,
+				06C49339214E0330000B7FB0 /* AppStart.swift */,
 				063E6A3A214B4CE70015C31D /* NSImage+FaceExtraction.swift */,
 				06964561214D7F3800AE3B9E /* String+FileManagement.swift */,
 				06964563214D9FBC00AE3B9E /* String+Subscript.swift */,
@@ -131,6 +134,7 @@
 				06964564214D9FBC00AE3B9E /* String+Subscript.swift in Sources */,
 				06964562214D7F3800AE3B9E /* String+FileManagement.swift in Sources */,
 				063E6A3B214B4CE70015C31D /* NSImage+FaceExtraction.swift in Sources */,
+				06C4933A214E0330000B7FB0 /* AppStart.swift in Sources */,
 				063E6A34214B4BF70015C31D /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

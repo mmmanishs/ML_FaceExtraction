@@ -10,9 +10,6 @@ import Foundation
 import Vision
 import AppKit
 
-// Main Directory
-var mainDirectory = "/Users/manishsingh/Desktop/Extract"
-
 // Input Directory: Folders with images are expected in this folder
 var inputDirectory = "/Users/manishsingh/Desktop/Extract/Input"
 
@@ -20,39 +17,17 @@ var inputDirectory = "/Users/manishsingh/Desktop/Extract/Input"
 let outputDirectoryHomePath = "/Users/manishsingh/Desktop/Extract/Output"
 
 func main() {
-    guard let inputImagesDirectories = inputDirectory.getContents(fileType: .directory) else {
+    let processArguments = ProcessInfo().arguments
+    guard processArguments.count != 3 else {
+        print("Unexpected number of arguments")
+        print("Valid example")
+        print("programName inputDirectory outputDirectory")
         return
     }
-    inputImagesDirectories.forEach { directory in
-        guard let imagesPath = directory.getContents(fileType: .file("png")) else {
-            return
-        }
-        
-        // Extracted face images.
-        var extractedImages = [NSImage]()
-        imagesPath.forEach { imagePath in
-            guard let image = imagePath.getObject() else {
-                return
-            }
-            image.extractFace { faceImages in
-                if faceImages.count > 0 {
-                    extractedImages.append(faceImages[0])
-                }
-            }
-        }
-        
-        // Now save extracted face images
-        let dirName = directory.nameFromPath
-        let outputDir = outputDirectoryHomePath.append(filePath: dirName)
-        outputDir.makeDirectory()
-        var imageNameCounter = 1
-        
-        extractedImages.forEach { image in
-            outputDir.saveImage(image: image, named: "\(imageNameCounter).png")
-            imageNameCounter += 1
-        }
-        
-    }
+    let processPath = processArguments[0]
+    let inputDir = processArguments[1]
+    let outputDir = processArguments[2]
+    startEvents(inputDir: inputDir, outputDir: outputDir)
 }
 
 main()
